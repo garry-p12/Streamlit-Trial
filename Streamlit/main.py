@@ -4,27 +4,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error
-from sklearn.linear_model import LinearRegression
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.preprocessing import LabelEncoder, StandardScaler,MinMaxScaler
-from sklearn.metrics import mean_absolute_error, r2_score
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.feature_selection import mutual_info_regression
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier,GradientBoostingRegressor
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
-from sklearn.model_selection import GridSearchCV, cross_val_score
-from sklearn.linear_model import LogisticRegression 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import  KNeighborsClassifier
-from sklearn.neural_network import  MLPClassifier
-from sklearn.svm import SVC
-import warnings
 warnings.filterwarnings('ignore')
 
 
