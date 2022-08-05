@@ -10,7 +10,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler,MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier,GradientBoostingRegressor
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
-warnings.filterwarnings('ignore')
 
 
 # In[15]:
