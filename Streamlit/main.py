@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler,MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier,GradientBoostingRegressor
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
-
+import pickle
 
 # In[15]:
 
@@ -120,7 +120,8 @@ with model_training:
         prediction = regr.predict([[tenure, rating, n_projects, salary,salary1,status,age,department]])
         return prediction
 
-      
+    pickle.dump(regr,open('attrition_model.pkl', 'wb')) 
+    model = pickle.load(open('attrition_model.pkl','rb'))     
     # following lines create boxes in which user can enter data required to make prediction 
     tenure = st.number_input('Tenure')
     rating = st.number_input('Rating') 
