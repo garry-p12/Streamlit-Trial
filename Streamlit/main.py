@@ -25,8 +25,8 @@ model_training = st.container()
 
 
 with header:
-    st.title('Employee Attrition level')
-    st.header('Will your employee stay or not?')
+    st.title('Employee Satisfaction level')
+    st.header('Are your employees satisfied with their work?')
 
 
 # In[75]:
